@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleTodo.EditPage"
+             BackgroundColor="#F5F5F5"
+             Title="Film adatai">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="20">
+
+            <Label Text="Film címe:"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   TextColor="Black" />
+            <Entry x:Name="TitleEntry"
+                   Placeholder="Film címe"
+                   TextColor="Black"
+                   FontSize="18"
+                   HeightRequest="45" />
+
+            <Label Text="Műfaj:"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   TextColor="Black" />
+            <Entry x:Name="GenreEntry"
+                   Placeholder="Műfaj"
+                   TextColor="Black"
+                   FontSize="18"
+                   HeightRequest="45" />
+
+            <Label Text="Korhatár:"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   TextColor="Black" />
+            <Entry x:Name="AgeEntry"
+                   Placeholder="Korhatár"
+                   TextColor="Black"
+                   FontSize="18"
+                   HeightRequest="45" />
+
+            <Label Text="Vetítés dátuma:"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   TextColor="Black" />
+            <Entry x:Name="DateEntry"
+                   Placeholder="YYYY-MM-DD"
+                   TextColor="Black"
+                   FontSize="18"
+                   HeightRequest="45" />
+
+            <Button Text="Film mentése"
+                    Clicked="OnSaveClicked"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    FontSize="18"
+                    HeightRequest="55"
+                    CornerRadius="12" />
+
+            <Button Text="Film törlése"
+                    Clicked="OnDeleteClicked"
+                    BackgroundColor="#E53935"
+                    TextColor="White"
+                    FontSize="18"
+                    HeightRequest="55"
+                    CornerRadius="12" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
